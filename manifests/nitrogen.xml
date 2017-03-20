@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- Build repositories -->
+  <remove-project name="platform/build"/>
+  <project path="build" name="android_build" remote="nos" revision="n">
+    <copyfile src="core/root.mk" dest="Makefile"/>
+  </project>
+
+  <!-- Vendor -->
+  <project path="vendor/nitrogen" name="android_vendor_nitrogen" remote="nos" revision="n"/>
+
+  <!-- Native -->
+  <remove-project name="platform/bionic"/>
+  <project path="bionic" name="android_bionic" remote="nos" revision="n"/>
+  <remove-project name="platform/art"/>
+  <project path="art" name="android_art" remote="nos" revision="n"/>
+
+  <!-- Hardware -->
+  <remove-project name="device/qcom/common" />
+  <project path="device/qcom/common" name="android_device_qcom_common" remote="nos" revision="n"/>
+  <project path="external/ant-wireless/antradio-library" name="android_external_ant-wireless_antradio-library" remote="nos" revision="n"/>
+  <remove-project name="platform/hardware/qcom/audio"/>
+  <project path="hardware/qcom/audio/default" name="android_hardware_qcom_audio" remote="nos" revision="n"/>
+  <project path="hardware/qcom/audio-caf/msm8952" name="android_hardware_qcom_audio" remote="nos" revision="n-8952"/>
+  <remove-project name="platform/hardware/qcom/display"/>
+  <project path="hardware/qcom/display-caf/msm8952" name="android_hardware_qcom_display" remote="nos" revision="n-8952"/>
+  <remove-project name="platform/hardware/qcom/media"/>
+  <project path="hardware/qcom/media-caf/msm8952" name="android_hardware_qcom_media" remote="nos" revision="n-8952"/>
+  <remove-project name="platform/hardware/qcom/bt"/>
+  <project path="hardware/qcom/bt" name="android_hardware_qcom_bt" remote="nos" revision="n"/>
+  <remove-project name="platform/hardware/libhardware"/>
+  <project path="hardware/libhardware" name="android_hardware_libhardware" remote="nos" revision="n"/>
+
+  <!-- System -->
+  <remove-project name="platform/system/vold" />
+  <project path="system/vold" name="android_system_vold" remote="nos" revision="n"/>
+   <remove-project name="platform/system/bt" />
+  <project path="system/bt" name="android_system_bt" remote="nos" revision="n"/>
+
+  <!-- Frameworks -->
+  <remove-project name="platform/frameworks/base" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="nos" revision="n"/>
+
+  <!-- External -->
+  <remove-project name="platform/external/skia" />
+  <project path="external/skia" name="android_external_skia" remote="nos" revision="n"/>
+
+  <!-- Obsolete Packages -->
+  <remove-project name="device/generic/arm64"/>
+  <remove-project name="device/generic/armv7-a-neon"/>
+  <remove-project name="device/generic/common"/>
+  <remove-project name="device/generic/goldfish"/>
+  <remove-project name="device/generic/mini-emulator-arm64"/>
+  <remove-project name="device/generic/mini-emulator-armv7-a-neon"/>
+  <remove-project name="device/generic/mini-emulator-x86"/>
+  <remove-project name="device/generic/mini-emulator-x86_64"/>
+  <remove-project name="device/generic/qemu"/>
+  <remove-project name="device/generic/x86"/>
+  <remove-project name="platform/vendor/qcom-opensource/wlan/prima"/>
+  <remove-project name="platform/vendor/qcom-opensource/wlan/qcacld-2.0"/>
+  <remove-project name="platform/vendor/qcom-opensource/wlan/utils/sigma-dut"/>
+  <remove-project name="platform/vendor/qcom/cobalt" path="device/qcom/msmcobalt"/>
+  <remove-project name="platform/vendor/qcom/thorium_32"/>
+  <remove-project name="platform/vendor/qcom/thorium_64"/>
+  <remove-project name="platform/vendor/qcom/thulium"/>
+  <remove-project name="platform/vendor/qcom/titanium_32"/>
+  <remove-project name="platform/vendor/qcom/titanium_64"/>
+  <remove-project name="platform/hardware/qcom/camera"/>
+  <remove-project name="platform/hardware/qcom/gps"/>
+  <remove-project name="platform/vendor/qcom-opensource/data-ipa-cfg-mgr"/>
+  <remove-project name="platform/vendor/qcom-opensource/kernel/kernel-tests"/>
+  <remove-project name="device/sample"/>
+  <remove-project name="kernel/msm-3.18"/>
+  <remove-project name="kernel/lk"/>
+  <remove-project name="device/generic/x86_64"/>
+  <remove-project name="platform/vendor/qcom-opensource/location"/>
+  <remove-project name="platform/packages/apps/CMFileManager"/>
+  <remove-project name="device/generic/goldfish-opengl"/>
+  <remove-project name="platform/packages/apps/Launcher2"/>
+
+</manifest>
