@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- Kenzo -->
+  <project path="device/xiaomi/kenzo" name="android_device_xiaomi_kenzo" remote="nos" revision="n" />
+  <project path="device/xiaomi/msm8956-common" name="android_device_xiaomi_msm8956-common" remote="nos" revision="n" />
+  <!-- Kernel -->
+  <project path="kernel/xiaomi/msm8956" name="android_kernel_xiaomi_msm8956" remote="nos" revision="n" />
+  <!-- Blobs -->
+  <project path="vendor/xiaomi" name="proprietary_vendor_xiaomi" remote="nos" revision="n" />
+
+</manifest>
