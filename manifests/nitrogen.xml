@@ -46,6 +46,9 @@
   <remove-project name="platform/external/skia" />
   <project path="external/skia" name="android_external_skia" remote="nos" revision="n"/>
 
+  <remove-project name="platform/packages/apps/Settings" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="nos" revision="n"/>
+  
   <!-- Obsolete Packages -->
   <remove-project name="device/generic/arm64"/>
   <remove-project name="device/generic/armv7-a-neon"/>
