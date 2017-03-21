@@ -49,6 +49,8 @@
   <project path="frameworks/base" name="android_frameworks_base" remote="nos" revision="n"/>
   <remove-project name="platform/frameworks/opt/telephony" />
   <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="nos" revision="n"/>
+  <remove-project name="platform/frameworks/native" />
+  <project path="frameworks/native" name="android_frameworks_native" remote="nos" revision="n"/>
   
   <!-- External -->
   <remove-project name="platform/external/skia" />
