@@ -33,12 +33,14 @@
   <project path="hardware/libhardware" name="android_hardware_libhardware" remote="nos" revision="n"/>
 
   <!-- System -->
-  <remove-project name="platform/system/vold" />
-  <project path="system/vold" name="android_system_vold" remote="nos" revision="n"/>
   <remove-project name="platform/system/bt" />
   <project path="system/bt" name="android_system_bt" remote="nos" revision="n"/>
   <remove-project name="platform/system/core" />
   <project path="system/core" name="android_system_core" remote="nos" revision="n"/>
+  <remove-project name="platform/system/extras" />
+  <project path="system/extras" name="android_system_extras" remote="nos" revision="n"/>
+  <remove-project name="platform/system/vold" />
+  <project path="system/vold" name="android_system_vold" remote="nos" revision="n"/>
 
   <!-- Frameworks -->
   <remove-project name="platform/frameworks/base" />
