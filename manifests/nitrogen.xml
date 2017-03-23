@@ -55,6 +55,8 @@
   <project path="frameworks/native" name="android_frameworks_native" remote="nos" revision="n"/>
   
   <!-- External -->
+  <remove-project name="platform/external/libphonenumber"/>
+  <project path="external/libphonenumber" name="android_external_libphonenumber" remote="nos" revision="n" />
   <remove-project name="platform/external/skia" />
   <project path="external/skia" name="android_external_skia" remote="nos" revision="n"/>
 
